@@ -1,0 +1,62 @@
+html,body,#app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.login_container{
+    /*绿色*/
+    background-color: #22bb44;
+    /*background: url('../assets/登陆背景.png');*/
+    height: 100%;
+    /*width: 100%;*/
+    background:url('../../assets/登陆背景.gif');
+    background-size:100%;
+}
+.login_box{
+    width: 450px;
+    height: 350px;
+    /*白色*/
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgb(11, 222, 235) 0px 0px 10px inset;
+}
+.avatar-box{
+    height: 130px;
+    width: 130px;
+    /*灰色*/
+    border: 1px solid #eee;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px #ddd;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*白色*/
+    background-color: #ffffff;
+}
+/*这个类下面的img*/
+.avatar-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #eee;
+
+}
+.btns{
+    /*弹性盒模型*/
+    display: flex;
+    justify-content: flex-end;
+}
+.login_form{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+
+    box-sizing: border-box;
+}
+
