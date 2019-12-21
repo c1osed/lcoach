@@ -1,0 +1,28 @@
+html,body,#app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#Eff1F4;
+}
+.el-menu-item{
+    /*margin-left: 100px;*/
+    font-size: 16px;
+
+}
+.el-menu :first-child{
+    margin-left: 30%;
+}
+.my{
+    color: #222;
+    float: right;
+    padding: 20px;
+    margin-right: 50px;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
