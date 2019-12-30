@@ -9,9 +9,9 @@ html,body,#app{
     font-size: 16px;
 
 }
-.el-menu :first-child{
-    margin-left: 30%;
-}
+/*.el-menu :first-child{*/
+/*    margin-left: 30%;*/
+/*}*/
 .my{
     color: #222;
     float: right;

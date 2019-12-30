@@ -42,5 +42,8 @@ export default {
     /*left: 1%;*/
 
 }
+.el-menu :first-child{
+    margin-left: 30%;
+}
 
 </style>

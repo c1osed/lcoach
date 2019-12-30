@@ -7,6 +7,9 @@ import Wdkb from '../components/wdkb/Wdkb'
 import Wdxs from '../components/wdxs/Wdxs'
 import Index from '../components/home/Index'
 import Lskc from '../components/lskc/Lskc'
+import WdxsqbMenu from '../components/wdxs/WdxsqbMenu'
+import WdxsstMenu from '../components/wdxs/WdxsstMenu'
+import WdxszsMenu from '../components/wdxs/WdxszsMenu'
 // Vue.use(Wdkb)
 // Vue.use(Wdxs)
 // Vue.use(Index)
@@ -23,6 +26,7 @@ export default new Router({
     {
       path: '/home',
       name: 'Home',
+      redirect:"/wdxs",
       component: Home,
       children: [
         {
@@ -39,6 +43,23 @@ export default new Router({
           path: '/wdxs',
           name: 'Wdxs',
           component: Wdxs,
+          children:[
+            {
+              path: '/wdxsqb',
+              name: 'Wdxsqb',
+              component: WdxsqbMenu,
+            },
+            {
+              path: '/wdxsst',
+              name: 'Wdxsst',
+              component: WdxsstMenu,
+            },
+            {
+              path: '/wdxszs',
+              name: 'Wdxszs',
+              component: WdxszsMenu,
+            }
+          ]
         },
         {
           path: '/lskc',
