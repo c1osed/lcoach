@@ -26,6 +26,9 @@ export default new Router({
     {
       path: '/home',
       name: 'Home',
+      meta: {
+        requireAuth: true
+      },
       redirect:"/wdxs",
       component: Home,
       children: [

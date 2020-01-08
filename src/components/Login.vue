@@ -63,22 +63,21 @@ export default {
       this.$refs.loginFormRef.validate(valid=>{
         console.log(valid);
         if(!valid) { this.$message.error('错了哦，登录失败');}else{
-          //编程式导航跳转到后台主页，路由地址是home
-          this.$router.push("/home")
-          this.$message({
-            message: '恭喜你，登陆成功',
-            type: 'success'
+          this.$axios.post('/studentlogin',{username:this.loginForm.username,password :this.loginForm.password}).then(successResponse=>{
+            // if(successResponse.data==200){}
+            console.log(successResponse);
+          }).catch(failResponse=>{
           });
 
 
+          // //编程式导航跳转到后台主页，路由地址是home
+          // this.$router.push("/home")
+          // this.$message({
+          //   message: '恭喜你，登陆成功',
+          //   type: 'success'
+          // });
         }
 
-        // this.$axios.post('',this.loginForm).then(successResponse=>{
-        //   // if(successResponse.data==200){}
-        //
-        //
-        // }).catch(failResponse=>{
-        // });
 
       });
     }

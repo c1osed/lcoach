@@ -13,9 +13,9 @@ html,body,#app{
 /*    margin-left: 30%;*/
 /*}*/
 .my{
-    color: #222;
-    float: right;
-    padding: 20px;
+    color: #fff;
+    float:right;
+    /*padding: 5px;*/
     margin-right: 50px;
 
 }
