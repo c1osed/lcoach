@@ -203,13 +203,13 @@ export default {
     handleSizeChange(pagesize) {
       // console.log(pagesize);
       this.queryInfo.pagesize=pagesize;
-      this.loadStudents();
+      this.loadTeachers()
     },
     //监听页码值改变事件
     handleCurrentChange(newpn) {
       // console.log(newpage);
       this.queryInfo.pn=newpn;
-      this.loadStudents();
+      this.loadTeachers()
     },
     loadTeachers () {
       this.$axios.get('/teachers', {params: this.queryInfo}).then(resp => {
