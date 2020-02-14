@@ -1,4 +1,5 @@
 <template>
+<!--    后台管理登陆界面-->
     <div class="login_container">
         <div class="login_box">
             <!--            头像区域-->
@@ -21,8 +22,6 @@
                     <el-button type="info" @click="resetForm('loginFormRef')">重置</el-button>
                 </el-form-item>
             </el-form>
-
-
         </div>
 
     </div>
@@ -32,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: 'LoginBack',
   data () {
     return{
       //这是登陆表单的数据对象
@@ -59,28 +58,17 @@ export default {
       this.$refs[formName].resetFields();
     },
  //登陆方法
-    login(){
-      this.$refs.loginFormRef.validate(valid=>{
-        console.log(valid);
-        if(!valid) { this.$message.error('错了哦，登录失败');}else{
-          this.$axios.post('/studentlogin',{username:this.loginForm.username,password :this.loginForm.password}).then(successResponse=>{
-            // if(successResponse.data==200){}
-            this.$router.push("/home");
-            console.log(successResponse);
-          }).catch(failResponse=>{
-          });
-
-
-          // //编程式导航跳转到后台主页，路由地址是home
-          // this.$router.push("/home")
-          // this.$message({
-          //   message: '恭喜你，登陆成功',
-          //   type: 'success'
-          // });
+    login () {
+      this.$refs.loginFormRef.validate(valid => {
+        console.log(valid)
+        if (!valid) {
+          this.$message.error('错了哦，登录失败')
+        } else {
+          if (this.loginForm.username == 'admin' && this.loginForm.password == '123') {
+             this.$router.push("/homeback");
+          }
         }
-
-
-      });
+      })
     }
   },
 }
