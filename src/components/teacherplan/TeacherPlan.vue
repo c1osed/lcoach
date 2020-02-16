@@ -1,7 +1,8 @@
 <template>
     <el-row>
         <el-container>
-            <el-main>  <el-button>默认按钮</el-button></el-main>
+            <el-main> <el-button>教学规划</el-button>
+            </el-main>
         </el-container>
     </el-row>
 </template>
@@ -9,7 +10,7 @@
 <script>
 
 export default {
-  name: 'Lskc',
+  name: 'TeacherPlan',
 
 
 
@@ -18,5 +19,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .el-main{
+        margin-right: 140px;
+        margin-left: 140px;
+    }
 
 </style>

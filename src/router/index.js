@@ -12,6 +12,8 @@ import WdxsstMenu from '../components/wdxs/WdxsstMenu'
 import WdxszsMenu from '../components/wdxs/WdxszsMenu'
 import LoginBack from '../components/LoginBack'
 import HomeBack from '../components/HomeBack'
+import TeacherPlan from '../components/teacherplan/TeacherPlan'
+import '@fullcalendar/core/main.css';
 import StudentsList from '../components/back/StudentsList'
 import AppMain from '../components/common/AppMain'
 // Vue.use(Wdkb)
@@ -114,6 +116,10 @@ export default new Router({
           path: '/lskc',
           name: 'Lskc',
           component: Lskc,
+        },{
+          path: '/teacherplan',
+          name: 'TeacherPlan',
+          component: TeacherPlan,
         }
       ]
     }

@@ -9,16 +9,16 @@
         <div class="wdxx">
             <img class="header" src="../../assets/登陆背景.gif">
             <div>
-                <a-dropdown>
-                    <a class="ant-dropdown-link" @click="onClickTwo"> Hover me, Click menu item
-<!--                        <a-icon type="down" /> -->
-</a>
-                    <a-menu slot="overlay" @click="onClick">
-                        <a-menu-item key="1">1st menu item</a-menu-item>
-                        <a-menu-item key="2">2nd menu item</a-menu-item>
-                        <a-menu-item key="3">3rd menu item</a-menu-item>
-                    </a-menu>
-                </a-dropdown>
+<!--                <a-dropdown>-->
+<!--                    <a class="ant-dropdown-link" @click="onClickTwo"> Hover me, Click menu item-->
+<!--&lt;!&ndash;                        <a-icon type="down" /> &ndash;&gt;-->
+<!--</a>-->
+<!--                    <a-menu slot="overlay" @click="onClick">-->
+<!--                        <a-menu-item key="1">1st menu item</a-menu-item>-->
+<!--                        <a-menu-item key="2">2nd menu item</a-menu-item>-->
+<!--                        <a-menu-item key="3">3rd menu item</a-menu-item>-->
+<!--                    </a-menu>-->
+<!--                </a-dropdown>-->
             </div>
         </div>
     </el-menu>
@@ -34,7 +34,7 @@ export default {
         {name: '/wdkb', navItem: '我的课表'},
         {name: '/wdxs', navItem: '我的学生'},
         {name: '/lskc', navItem: '历史课程'},
-        {name: '/index', navItem: '教学规划'}
+        {name: '/teacherplan', navItem: '教学规划'}
       ]
     }
   },
